@@ -34,7 +34,7 @@ Great way to practice the basics of Front end.
 
 ### Useful resources
 
--   [Example resource 1](https://www.joshwcomeau.com/) - A great CSS resourses.
+-   https://www.joshwcomeau.com/ - A great CSS resource.
 
 ## Author
 
