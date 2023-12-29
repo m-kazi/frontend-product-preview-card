@@ -22,8 +22,7 @@ Great way to practice the basics of Front end.
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://frontend-productpreview.onrender.com/))
 
 ### Built with
 
@@ -39,6 +38,5 @@ Great way to practice the basics of Front end.
 
 ## Author
 
--   Website - [Add your name here](https://www.your-site.com)
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
--   Twitter - [@yourusername](https://www.twitter.com/yourusername)
+-   Frontend Mentor - [@m-kazi](https://www.frontendmentor.io/profile/m-kazi)
+-   Twitter - [@imkazzzz](https://www.twitter.com/imkazzzz)
