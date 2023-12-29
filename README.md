@@ -18,7 +18,7 @@ Great way to practice the basics of Front end.
 ### Screenshot
 
 ![](images/Frontend%20Mentor%20Product%20preview%20card%20component-desktop.png)
-![](images/Frontend%20Mentor%20Product%20preview%20card%20component-mobile.png)
+
 
 ### Links
 
