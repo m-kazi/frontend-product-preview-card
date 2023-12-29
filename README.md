@@ -22,7 +22,7 @@ Great way to practice the basics of Front end.
 
 ### Links
 
--   Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://frontend-productpreview.onrender.com/))
+-   Live Site URL: [Add live site URL here]([https://frontend-productpreview.onrender.com])
 
 ### Built with
 
