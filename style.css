@@ -7,24 +7,7 @@
     color: hsl(228, 45%, 44%);
 }
 
-/* || CUSTOM PROPERTIES */
-
-:root {
-    --clr-primary: hsl(158, 36%, 37%);
-    --clr-primary-bg: hsl(30, 38%, 92%);
-
-    --clr-neutral-900: hsl(212, 21%, 14%);
-    --clr-neutral-400: hsl(228, 12%, 48%);
-    --clr-neutral-100: hsl(0, 0%, 100%);
-
-    --ff-sp: "Fraunces", serif;
-    --ff-base: "Montserrat", sans-serif;
-
-    --fw-regular: 500;
-    --fw-bold: 700;
-}
-
-/* || RESET */
+/* || Reset */
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -49,8 +32,16 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
+
+/* 
+    5. Allow percentage based heights 
+    */
+html,
+body {
+    height: 100%;
+}
 /*
-    5. Improve media defaults
+    6. Improve media defaults
   */
 img,
 picture,
@@ -61,7 +52,7 @@ svg {
     max-width: 100%;
 }
 /*
-    6. Remove built-in form typography styles
+    7. Remove built-in form typography styles
   */
 input,
 button,
@@ -70,7 +61,7 @@ select {
     font: inherit;
 }
 /*
-    7. Avoid text overflows
+    8. Avoid text overflows
   */
 p,
 h1,
@@ -80,4 +71,126 @@ h4,
 h5,
 h6 {
     overflow-wrap: break-word;
+}
+
+h1 {
+    line-height: 1;
+}
+
+/* || Custom Properties */
+
+:root {
+    --clr-primary: hsl(158, 36%, 37%);
+    --clr-primary-400: hsl(158, 36%, 25%);
+
+    --clr-primary-bg: hsl(30, 38%, 92%);
+
+    --clr-neutral-900: hsl(212, 21%, 14%);
+    --clr-neutral-400: hsl(228, 12%, 48%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-sp: "Fraunces", serif;
+    --ff-base: "Montserrat", sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+/* || Utilities */
+
+.price-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* || General */
+
+body {
+    background-color: var(--clr-primary-bg);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 0.875rem;
+    color: var(--clr-neutral-400);
+    margin: 1rem;
+
+    display: grid;
+    place-content: center;
+}
+
+/* || Product Styling */
+
+.product {
+    --content-padding: 1.5rem;
+    --content-spacing: 1rem;
+
+    background-color: var(--clr-neutral-100);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 600px;
+
+    display: grid;
+}
+
+/* || Media Queries */
+
+@media (min-width: 640px) {
+    .product {
+        grid-template-columns: 1fr 1fr;
+        --content-padding: 2rem;
+    }
+}
+
+.product__content {
+    display: grid;
+    gap: var(--content-spacing);
+    padding: var(--content-padding);
+}
+
+.product__category {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+}
+
+.product__title {
+    font-family: var(--ff-sp);
+    font-size: 2rem;
+    color: var(--clr-neutral-900);
+}
+
+.product__discount-price {
+    font-family: var(--ff-sp);
+    color: var(--clr-primary);
+    font-size: 2rem;
+}
+
+/* || Button */
+
+.btn-cart {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-100);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.65em 1.5em;
+    font-size: 0.9rem;
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.btn-cart:is(:hover, :active) {
+    background-color: var(--clr-primary-400);
+}
+
+.btn-cart[data-icon="shopping-cart"]::before {
+    content: "";
+    width: 15px;
+    height: 16px;
+    background-image: url(images/icon-cart.svg);
 }
